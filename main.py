@@ -26,7 +26,7 @@ if uploaded_image:
     # Create a pillow image instant
     image = ig.open (uploaded_image)
     # convert the image grey scale
-    gre_image = uploaded_image.convert("L")
+    gre_image = image.convert("L")
     # Show the image
     st.image(gre_image)
 
