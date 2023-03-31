@@ -11,6 +11,8 @@ st.header("Camera app")
 with st.expander("Take a picture"):
     photo = st.camera_input("")
 
+uploaded_image = st.file_uploader("Upload Image")
+
 if photo:
     # Create a pillow image instant
     image = ig.open (photo)
@@ -19,7 +21,6 @@ if photo:
     # Show the image
     st.image(gre_image)
 
-uploaded_image = st.file_uploader("Upload Image")
 
 if uploaded_image:
     # Create a pillow image instant
