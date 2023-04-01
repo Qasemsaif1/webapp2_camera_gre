@@ -5,7 +5,7 @@ import functions as fc
 st.header("Camera app")
 # Taking a Picture
 
-# with st.expander(label="") Thelines bilow will be indented
+# with st.expander(label="") The lines below will be indented
 with st.expander("Take a picture"):
     photo = st.camera_input("")
 
